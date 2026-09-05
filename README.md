@@ -1,12 +1,58 @@
-# React + Vite
+# 🚀 Love Kumar — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <strong>AI Automation Developer • React Developer • AI Enthusiast</strong>
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="https://github.com/lovekumar2005">
+    <img src="https://img.shields.io/badge/GitHub-Love%20Kumar-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+  <img src="https://img.shields.io/badge/React-2026-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/n8n-AI_Automation-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n">
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👋 About
 
-## Expanding the ESLint configuration
+My personal portfolio website showcasing my **skills, projects, experience, and AI automation work**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+It also includes an **AI-powered chatbot** that can answer questions about my background, skills, projects, and experience.
+
+## ✨ Features
+
+* 🎨 Modern & responsive UI
+* 🤖 AI-powered portfolio chatbot
+* ⚡ React + Vite
+* 🎬 Framer Motion animations
+* 📱 Mobile responsive design
+* 📄 Downloadable CV
+* 🔗 GitHub, LinkedIn & freelancing links
+* ⚙️ n8n + OpenAI integration
+
+## 🛠️ Tech Stack
+
+**Frontend:** React, JavaScript, Tailwind CSS, Framer Motion
+**Automation & AI:** n8n, OpenAI, REST APIs
+**Tools:** Git, GitHub, Vite
+
+## 🚀 Run Locally
+
+```bash
+git clone https://github.com/lovekumar2005/love-kumar-portfolio.git
+cd love-kumar-portfolio
+npm install
+npm run dev
+```
+
+## 📬 Connect With Me
+
+* **GitHub:** https://github.com/lovekumar2005
+* **LinkedIn:** https://www.linkedin.com/in/love-kumar-23866a292/
+* **Email:** [lovepehlaj2005@gmail.com](mailto:lovepehlaj2005@gmail.com)
+
+---
+
+<p align="center">
+  ⭐ If you like this project, consider giving it a star!
+</p>
