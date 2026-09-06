@@ -18,7 +18,7 @@ import {
 
 import AboutParticles from "./AboutParticles";
 
-/* ABOUT DATA */
+/* ABOUT DATA*/
 const aboutData = {
   eyebrow: "GET TO KNOW ME",
 
@@ -58,7 +58,7 @@ const aboutData = {
       icon: Globe,
     },
     {
-      label: "Location",
+      label: "Based In",
       value: "Lahore, Pakistan",
       icon: MapPin,
     },
@@ -73,8 +73,8 @@ const aboutData = {
       icon: Mail,
     },
     {
-      label: "Freelance",
-      value: "Available",
+      label: "Availability",
+      value: "Open to opportunities",
       icon: BriefcaseBusiness,
     },
     {
@@ -89,21 +89,19 @@ const aboutData = {
       year: "2024 — Present",
       degree: "BSc | Business & Information Technology (BBIT)",
       institution: "University of Punjab, Lahore",
+      description:
+        "Building a strong combination of business understanding and technical skills, with a growing focus on software development, AI, automation, and digital solutions.",
     },
     {
       year: "2022 — 2024",
       degree: "FSc | Pre Engineering",
       institution: "Degree College, Mithi, Tharparkar, Sindh",
-    },
-    {
-      year: "2017 — 2022",
-      degree: "Matriculation in Science",
-      institution: "Raichand Rathore High School, Chelhar, Tharparkar, Sindh",
+      description:
+        "Developed a solid foundation in mathematics, science, analytical thinking, and problem solving — skills that continue to support my technical journey.",
     },
   ],
 };
 
-/* CORE AREAS */
 const focusAreas = [
   {
     icon: Bot,
@@ -125,7 +123,7 @@ const focusAreas = [
   },
 ];
 
-/* ANIMATIONS */
+/* ANIMATIONS*/
 const fadeUp = {
   hidden: {
     opacity: 0,
@@ -143,7 +141,6 @@ const fadeUp = {
   },
 };
 
-/* Introduction left animation */
 const fadeLeft = {
   hidden: {
     opacity: 0,
@@ -161,7 +158,6 @@ const fadeLeft = {
   },
 };
 
-/* Introduction right animation */
 const fadeRight = {
   hidden: {
     opacity: 0,
@@ -179,7 +175,6 @@ const fadeRight = {
   },
 };
 
-/* Accent line animation */
 const accentLine = {
   hidden: {
     width: 0,
@@ -203,8 +198,12 @@ const About = () => {
       id="about"
       className="relative overflow-hidden bg-[#02050b] py-24 text-white sm:py-28 lg:py-32"
     >
-      {/* BACKGROUND */}
+      {/* =====================================================
+          BACKGROUND
+      ===================================================== */}
+
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
+
         {/* Main background */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_8%_10%,rgba(22,140,255,0.12),transparent_30%),radial-gradient(circle_at_92%_18%,rgba(139,92,246,0.09),transparent_28%),radial-gradient(circle_at_55%_90%,rgba(56,189,248,0.055),transparent_30%),linear-gradient(135deg,#02050b_0%,#030813_48%,#050914_100%)]" />
 
@@ -251,9 +250,15 @@ const About = () => {
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-linear-to-t from-[#02050b] to-transparent" />
       </div>
 
-      {/* MAIN CONTAINER */}
+      {/* =====================================================
+          MAIN CONTAINER
+      ===================================================== */}
+
       <div className="relative z-10 mx-auto w-[calc(100%-32px)] max-w-7xl sm:w-[calc(100%-48px)] lg:w-[calc(100%-64px)]">
-        {/* SECTION HEADER */}
+
+        {/* ===================================================
+            SECTION HEADER
+        =================================================== */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -299,8 +304,12 @@ const About = () => {
           />
         </motion.div>
 
-        {/* INTRODUCTION */}
+        {/* ===================================================
+            INTRODUCTION
+        =================================================== */}
+
         <div className="mb-16 grid gap-6 lg:grid-cols-[1.3fr_0.7fr] lg:gap-8">
+
           {/* Main introduction */}
           <motion.div
             initial="hidden"
@@ -315,35 +324,29 @@ const About = () => {
             }}
             className="group relative overflow-hidden rounded-[28px] border border-white/[0.07] bg-[#080d15]/80 p-7 shadow-[0_20px_70px_rgba(0,0,0,0.16)] backdrop-blur-xl transition-all duration-500 hover:border-[#168cff]/15 sm:p-10"
           >
-            {/* Top gradient */}
             <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-[#168cff]/50 to-transparent" />
 
-            {/* Glow */}
             <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-[#168cff]/5.5 blur-[90px] transition-all duration-700 group-hover:bg-[#168cff]/0" />
 
             <div className="relative">
-              {/* Label */}
+
               <div className="mb-6 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#168cff]">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#168cff] shadow-[0_0_10px_rgba(22,140,255,0.8)]" />
                 Introduction
               </div>
 
-              {/* Name */}
               <h3 className="text-[32px] font-bold tracking-[-0.03em] text-white sm:text-[42px]">
                 {aboutData.name}
               </h3>
 
-              {/* Role */}
               <p className="mt-5 max-w-3xl text-base font-medium leading-7 text-gray-300 sm:text-lg sm:leading-8">
                 {aboutData.role}
               </p>
 
-              {/* Description */}
               <p className="mt-6 max-w-3xl text-sm leading-7 text-gray-500 sm:text-[15px] sm:leading-8">
                 {aboutData.description}
               </p>
 
-              {/* Expertise pills */}
               <div className="mt-9 flex flex-wrap gap-2.5">
                 {[
                   "AI Automation",
@@ -375,11 +378,10 @@ const About = () => {
             variants={fadeRight}
             className="relative overflow-hidden rounded-[28px] border border-[#168cff]/10 bg-linear-to-br from-[#168cff]/6.5 via-[#080d15]/90 to-violet-500/4.5 p-7 shadow-[0_20px_70px_rgba(0,0,0,0.15)] backdrop-blur-xl sm:p-9"
           >
-            {/* Glow */}
             <div className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-[#168cff]/8 blur-[75px]" />
 
             <div className="relative">
-              {/* Icon */}
+
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[#168cff]/20 bg-[#168cff]/[0.07] text-[#38bdf8]">
                 <Sparkles size={20} />
               </div>
@@ -402,10 +404,8 @@ const About = () => {
                 real problems.
               </p>
 
-              {/* Divider */}
               <div className="my-6 h-px w-full bg-linear-to-r from-[#168cff]/30 via-white/[0.07] to-transparent" />
 
-              {/* Availability */}
               <div className="flex items-center gap-2">
                 <span className="relative flex h-2 w-2">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
@@ -420,7 +420,10 @@ const About = () => {
           </motion.div>
         </div>
 
-        {/* FOCUS AREAS */}
+        {/* ===================================================
+            FOCUS AREAS
+        =================================================== */}
+
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -467,7 +470,6 @@ const About = () => {
                   }}
                   className="group relative overflow-hidden rounded-2xl border border-white/6 bg-[#080d15]/70 p-6 backdrop-blur-md transition-all duration-300 hover:border-[#168cff]/20 hover:bg-[#168cff]/2.5"
                 >
-                  {/* Glow */}
                   <div className="pointer-events-none absolute -right-10 -top-10 h-24 w-24 rounded-full bg-[#168cff]/0 blur-3xl transition-all duration-500 group-hover:bg-[#168cff]/10" />
 
                   <div className="relative flex h-11 w-11 items-center justify-center rounded-xl border border-[#168cff]/15 bg-[#168cff]/5 text-[#168cff] transition-all duration-300 group-hover:border-[#168cff]/30 group-hover:bg-[#168cff]/9 group-hover:shadow-[0_0_20px_rgba(22,140,255,0.10)]">
@@ -487,9 +489,16 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/* MAIN CONTENT */}
+        {/* ===================================================
+            PERSONAL + EDUCATION
+        =================================================== */}
+
         <div className="grid items-stretch gap-12 lg:grid-cols-[1fr_0.95fr] lg:gap-16">
-          {/* PERSONAL INFORMATION */}
+
+          {/* =================================================
+              PERSONAL INFORMATION
+          ================================================= */}
+
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -500,15 +509,27 @@ const About = () => {
             variants={fadeLeft}
             className="flex min-w-0 flex-col"
           >
+
             {/* Heading */}
             <div className="mb-7 flex items-center gap-4">
               <div>
-                <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#168cff]">Personal</p>
-                <h3 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">A little more about me</h3>
+                <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#168cff]">
+                  Beyond the Code
+                </p>
+
+                <h3 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">
+                  The person behind the work
+                </h3>
               </div>
 
               <div className="h-px flex-1 bg-linear-to-r from-white/10 to-transparent" />
             </div>
+
+            {/* Intro line */}
+            <p className="mb-6 max-w-xl text-sm leading-7 text-gray-500">
+              A few details that give a little more context
+              about me, my background, and how I work.
+            </p>
 
             {/* Information grid */}
             <div className="grid flex-1 grid-cols-1 content-start gap-4 sm:grid-cols-2">
@@ -526,17 +547,19 @@ const About = () => {
                     }}
                     variants={fadeUp}
                     whileHover={{
-                      y: -3,
+                      y: -4,
                     }}
                     transition={{
                       duration: 0.25,
                     }}
                     className="group relative min-h-20.5 overflow-hidden rounded-2xl border border-white/6 bg-[#080d15]/70 p-4 backdrop-blur-md transition-all duration-300 hover:border-[#168cff]/20 hover:bg-[#168cff]/2.5"
                   >
-                    {/* Hover glow */}
+
+                    {/* Glow */}
                     <div className="pointer-events-none absolute -right-8 -top-8 h-20 w-20 rounded-full bg-[#168cff]/0 blur-2xl transition-all duration-500 group-hover:bg-[#168cff]/10" />
 
                     <div className="relative flex h-full items-center gap-3">
+
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#168cff]/10 bg-[#168cff]/4.5 text-[#168cff] transition-all duration-300 group-hover:border-[#168cff]/25 group-hover:bg-[#168cff]/8">
                         <Icon size={16} strokeWidth={1.8} />
                       </div>
@@ -550,6 +573,7 @@ const About = () => {
                           {item.value}
                         </p>
                       </div>
+
                     </div>
                   </motion.div>
                 );
@@ -557,7 +581,10 @@ const About = () => {
             </div>
           </motion.div>
 
-          {/* EDUCATION */}
+          {/* =================================================
+              EDUCATION
+          ================================================= */}
+
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -568,11 +595,12 @@ const About = () => {
             variants={fadeRight}
             className="min-w-0"
           >
+
             {/* Heading */}
-            <div className="mb-7 flex items-center gap-4">
+            <div className="mb-5 flex items-center gap-4">
               <div>
                 <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#168cff]">
-                  My Journey
+                  Academic Journey
                 </p>
 
                 <h3 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">
@@ -583,8 +611,16 @@ const About = () => {
               <div className="h-px flex-1 bg-linear-to-r from-white/10 to-transparent" />
             </div>
 
+            {/* Intro */}
+            <p className="mb-7 max-w-xl text-sm leading-7 text-gray-500">
+              The academic foundation behind my technical
+              journey — combining analytical thinking,
+              business knowledge, and technology.
+            </p>
+
             {/* Timeline */}
             <div className="relative">
+
               {/* Timeline line */}
               <div className="absolute bottom-2 left-2 top-2 w-px bg-linear-to-b from-[#168cff]/60 via-[#168cff]/20 to-transparent" />
 
@@ -600,33 +636,49 @@ const About = () => {
                     }}
                     variants={fadeUp}
                     whileHover={{
-                      x: 4,
+                      x: 5,
                     }}
                     transition={{
                       duration: 0.25,
                     }}
                     className="group relative pl-9 sm:pl-10"
                   >
+
                     {/* Timeline dot */}
                     <div className="absolute left-0 top-1 flex h-4.5 w-4.5 items-center justify-center rounded-full border-2 border-[#168cff]/60 bg-[#02050b] transition-all duration-300 group-hover:border-[#38bdf8] group-hover:shadow-[0_0_18px_rgba(22,140,255,0.45)]">
                       <span className="h-1.5 w-1.5 rounded-full bg-[#168cff] transition-all duration-300 group-hover:scale-125 group-hover:bg-[#38bdf8]" />
                     </div>
 
-                    {/* Card */}
-                    <div className="relative overflow-hidden rounded-2xl border border-white/6 bg-[#080d15]/70 p-5 backdrop-blur-md transition-all duration-300 group-hover:border-[#168cff]/20 group-hover:bg-[#168cff]/2.5">
-                      {/* Glow */}
-                      <div className="pointer-events-none absolute -right-10 -top-10 h-24 w-24 rounded-full bg-[#168cff]/0 blur-3xl transition-all duration-500 group-hover:bg-[#168cff]/10" />
+                    {/* Education card */}
+                    <div
+                      className={`relative overflow-hidden rounded-2xl border p-5 backdrop-blur-md transition-all duration-300 ${
+                        index === 0
+                          ? "border-[#168cff]/15 bg-linear-to-br from-[#168cff]/5 via-[#080d15]/80 to-violet-500/3"
+                          : "border-white/6 bg-[#080d15]/70"
+                      } group-hover:border-[#168cff]/25`}
+                    >
 
-                      {/* Header */}
+                      {/* Glow */}
+                      <div className="pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full bg-[#168cff]/0 blur-3xl transition-all duration-500 group-hover:bg-[#168cff]/10" />
+
+                      {/* Top row */}
                       <div className="relative flex items-center justify-between gap-3">
-                        <span className="rounded-full border border-[#168cff]/15 bg-[#168cff]/6 px-3 py-1 text-[10px] font-semibold tracking-wide text-[#5fb8ff] sm:text-xs">
+
+                        <span
+                          className={`rounded-full border px-3 py-1 text-[10px] font-semibold tracking-wide sm:text-xs ${
+                            index === 0
+                              ? "border-[#168cff]/25 bg-[#168cff]/8 text-[#7dc8ff]"
+                              : "border-white/8 bg-white/3 text-gray-500"
+                          }`}
+                        >
                           {item.year}
                         </span>
 
                         <GraduationCap
-                          size={17}
+                          size={18}
                           className="text-gray-700 transition-colors duration-300 group-hover:text-[#168cff]"
                         />
+
                       </div>
 
                       {/* Degree */}
@@ -635,17 +687,23 @@ const About = () => {
                       </h4>
 
                       {/* Institution */}
-                      <p className="relative mt-2 text-sm leading-6 text-gray-500">
+                      <p className="relative mt-2 text-sm font-medium leading-6 text-gray-400">
                         {item.institution}
+                      </p>
+
+                      {/* Description */}
+                      <p className="relative mt-3 text-xs leading-6 text-gray-600">
+                        {item.description}
                       </p>
 
                       {/* Current indicator */}
                       {index === 0 && (
-                        <div className="relative mt-4 inline-flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-[0.14em] text-emerald-400/70">
-                          <CheckCircle2 size={12} />
+                        <div className="relative mt-4 inline-flex items-center gap-1.5 rounded-full border border-emerald-400/10 bg-emerald-400/5 px-2.5 py-1 text-[9px] font-semibold uppercase tracking-[0.14em] text-emerald-400/80">
+                          <CheckCircle2 size={11} />
                           Currently pursuing
                         </div>
                       )}
+
                     </div>
                   </motion.div>
                 ))}
@@ -654,7 +712,10 @@ const About = () => {
           </motion.div>
         </div>
 
-        {/* FINAL CTA */}
+        {/* ===================================================
+            FINAL CTA
+        =================================================== */}
+
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -665,14 +726,13 @@ const About = () => {
           variants={fadeUp}
           className="group relative mt-16 overflow-hidden rounded-[28px] border border-[#168cff]/10 bg-linear-to-r from-[#168cff]/5.5 via-[#080d15]/80 to-violet-500/4.5 p-7 text-center shadow-[0_20px_70px_rgba(0,0,0,0.12)] backdrop-blur-xl sm:mt-20 sm:p-10"
         >
-          {/* Top line */}
+
           <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-[#168cff]/50 to-transparent" />
 
-          {/* Glow */}
           <div className="pointer-events-none absolute left-1/2 top-1/2 h-48 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#168cff]/[0.07] blur-[90px] transition-all duration-700 group-hover:bg-[#168cff]/11" />
 
           <div className="relative">
-            {/* Small label */}
+
             <div className="inline-flex items-center gap-2 rounded-full border border-white/6 bg-white/2 px-3 py-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-[#38bdf8] shadow-[0_0_10px_rgba(56,189,248,0.8)]" />
 
@@ -695,7 +755,6 @@ const About = () => {
               web development come together.
             </p>
 
-            {/* CTA */}
             <motion.a
               href="#contact"
               whileHover={{
