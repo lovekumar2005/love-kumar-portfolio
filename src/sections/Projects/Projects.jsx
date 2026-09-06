@@ -41,10 +41,9 @@ const projects = [
     image: "/projects/sales-automation.png",
     technologies: ["n8n", "AI", "APIs", "Webhooks"],
     icon: Bot,
-    github: "https://github.com/yourusername/sales-automation",
+    github: "https://github.com/lovekumar2005/ai-lead-qualification-automation",
     live: "",
   },
-
   {
     number: "02",
     category: "AI AUTOMATION",
@@ -54,7 +53,7 @@ const projects = [
     image: "/projects/medical-receptionist.png",
     technologies: ["n8n", "WhatsApp", "AI", "APIs"],
     icon: Bot,
-    github: "https://github.com/yourusername/medical-receptionist",
+    github: "https://github.com/lovekumar2005/AI-Appointment-Bot",
     live: "",
   },
 

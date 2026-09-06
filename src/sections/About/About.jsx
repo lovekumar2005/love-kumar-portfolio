@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import {
-  Download,
   MapPin,
   Phone,
   Mail,
@@ -35,8 +34,7 @@ const aboutData = {
       <span className="bg-linear-to-r from-[#38bdf8] to-[#168cff] bg-clip-text text-transparent">
         Frontend Developer
       </span>{" "}
-      based in{" "}
-      <span className="text-white">Lahore, Pakistan</span>
+      based in <span className="text-white">Lahore, Pakistan</span>
     </>
   ),
 
@@ -95,18 +93,14 @@ const aboutData = {
     {
       year: "2022 — 2024",
       degree: "FSc | Pre Engineering",
-      institution:
-        "Degree College, Mithi, Tharparkar, Sindh",
+      institution: "Degree College, Mithi, Tharparkar, Sindh",
     },
     {
       year: "2017 — 2022",
       degree: "Matriculation in Science",
-      institution:
-        "Raichand Rathore High School, Chelhar, Tharparkar, Sindh",
+      institution: "Raichand Rathore High School, Chelhar, Tharparkar, Sindh",
     },
   ],
-
-  cvUrl: "/Love-kumar-CV.pdf",
 };
 
 /* CORE AREAS */
@@ -212,9 +206,7 @@ const About = () => {
       {/* BACKGROUND */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         {/* Main background */}
-        <div
-          className="absolute inset-0 bg-[radial-gradient(circle_at_8%_10%,rgba(22,140,255,0.12),transparent_30%),radial-gradient(circle_at_92%_18%,rgba(139,92,246,0.09),transparent_28%),radial-gradient(circle_at_55%_90%,rgba(56,189,248,0.055),transparent_30%),linear-gradient(135deg,#02050b_0%,#030813_48%,#050914_100%)]"
-        />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_8%_10%,rgba(22,140,255,0.12),transparent_30%),radial-gradient(circle_at_92%_18%,rgba(139,92,246,0.09),transparent_28%),radial-gradient(circle_at_55%_90%,rgba(56,189,248,0.055),transparent_30%),linear-gradient(135deg,#02050b_0%,#030813_48%,#050914_100%)]" />
 
         {/* Blue ambient glow */}
         <motion.div
@@ -274,10 +266,7 @@ const About = () => {
         >
           {/* Eyebrow */}
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#168cff]/20 bg-[#168cff]/4.5 px-4 py-2 shadow-[0_0_25px_rgba(22,140,255,0.04)] backdrop-blur-md">
-            <Sparkles
-              size={13}
-              className="text-[#38bdf8]"
-            />
+            <Sparkles size={13} className="text-[#38bdf8]" />
 
             <span className="text-[10px] font-semibold uppercase tracking-[0.32em] text-[#7dc8ff] sm:text-xs">
               {aboutData.eyebrow}
@@ -340,22 +329,22 @@ const About = () => {
               </div>
 
               {/* Name */}
-              <h3 className="text-[30px] font-bold tracking-[-0.03em] text-white sm:text-[40px]">
+              <h3 className="text-[32px] font-bold tracking-[-0.03em] text-white sm:text-[42px]">
                 {aboutData.name}
               </h3>
 
               {/* Role */}
-              <p className="mt-4 max-w-3xl text-base font-medium leading-7 text-gray-300 sm:text-lg">
+              <p className="mt-5 max-w-3xl text-base font-medium leading-7 text-gray-300 sm:text-lg sm:leading-8">
                 {aboutData.role}
               </p>
 
               {/* Description */}
-              <p className="mt-5 max-w-3xl text-sm leading-7 text-gray-500 sm:text-[15px]">
+              <p className="mt-6 max-w-3xl text-sm leading-7 text-gray-500 sm:text-[15px] sm:leading-8">
                 {aboutData.description}
               </p>
 
               {/* Expertise pills */}
-              <div className="mt-8 flex flex-wrap gap-2.5">
+              <div className="mt-9 flex flex-wrap gap-2.5">
                 {[
                   "AI Automation",
                   "React.js",
@@ -366,7 +355,7 @@ const About = () => {
                 ].map((item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-white/[0.07] bg-white/2.5 px-3 py-1.5 text-[11px] font-medium text-gray-400 transition-all duration-300 hover:border-[#168cff]/25 hover:bg-[#168cff]/5 hover:text-[#8acbff]"
+                    className="rounded-full border border-white/[0.07] bg-white/2.5 px-3.5 py-2 text-[11px] font-medium text-gray-400 transition-all duration-300 hover:border-[#168cff]/25 hover:bg-[#168cff]/5 hover:text-[#8acbff]"
                   >
                     {item}
                   </span>
@@ -482,10 +471,7 @@ const About = () => {
                   <div className="pointer-events-none absolute -right-10 -top-10 h-24 w-24 rounded-full bg-[#168cff]/0 blur-3xl transition-all duration-500 group-hover:bg-[#168cff]/10" />
 
                   <div className="relative flex h-11 w-11 items-center justify-center rounded-xl border border-[#168cff]/15 bg-[#168cff]/5 text-[#168cff] transition-all duration-300 group-hover:border-[#168cff]/30 group-hover:bg-[#168cff]/9 group-hover:shadow-[0_0_20px_rgba(22,140,255,0.10)]">
-                    <Icon
-                      size={19}
-                      strokeWidth={1.7}
-                    />
+                    <Icon size={19} strokeWidth={1.7} />
                   </div>
 
                   <h4 className="relative mt-5 text-base font-bold text-white">
@@ -502,30 +488,35 @@ const About = () => {
         </motion.div>
 
         {/* MAIN CONTENT */}
-        <div className="grid items-start gap-12 lg:grid-cols-[1fr_0.95fr] lg:gap-16">
+        <div className="grid items-stretch gap-12 lg:grid-cols-[1fr_0.95fr] lg:gap-16">
           {/* PERSONAL INFORMATION */}
-          <div className="min-w-0">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{
+              once: true,
+              amount: 0.12,
+            }}
+            variants={fadeLeft}
+            className="flex min-w-0 flex-col"
+          >
             {/* Heading */}
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{
-                once: true,
-                amount: 0.15,
-              }}
-              variants={fadeLeft}
-              className="mb-7 flex items-center gap-4"
-            >
+            <div className="mb-7 flex items-center gap-4">
               <div>
-                <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#168cff]">Personal</p>
-                <h3 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">A little more about me</h3>
+                <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#168cff]">
+                  Personal
+                </p>
+
+                <h3 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">
+                  A little more about me
+                </h3>
               </div>
 
               <div className="h-px flex-1 bg-linear-to-r from-white/10 to-transparent" />
-            </motion.div>
+            </div>
 
             {/* Information grid */}
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <div className="grid flex-1 grid-cols-1 content-start gap-4 sm:grid-cols-2">
               {aboutData.personalInfo.map((item, index) => {
                 const Icon = item.icon;
 
@@ -545,17 +536,14 @@ const About = () => {
                     transition={{
                       duration: 0.25,
                     }}
-                    className="group relative overflow-hidden rounded-2xl border border-white/6 bg-[#080d15]/70 p-4 backdrop-blur-md transition-all duration-300 hover:border-[#168cff]/20 hover:bg-[#168cff]/2.5"
+                    className="group relative min-h-[82px] overflow-hidden rounded-2xl border border-white/6 bg-[#080d15]/70 p-4 backdrop-blur-md transition-all duration-300 hover:border-[#168cff]/20 hover:bg-[#168cff]/2.5"
                   >
                     {/* Hover glow */}
                     <div className="pointer-events-none absolute -right-8 -top-8 h-20 w-20 rounded-full bg-[#168cff]/0 blur-2xl transition-all duration-500 group-hover:bg-[#168cff]/10" />
 
-                    <div className="relative flex items-center gap-3">
-                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-[#168cff]/10 bg-[#168cff]/4.5 text-[#168cff] transition-all duration-300 group-hover:border-[#168cff]/25 group-hover:bg-[#168cff]/8">
-                        <Icon
-                          size={15}
-                          strokeWidth={1.8}
-                        />
+                    <div className="relative flex h-full items-center gap-3">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#168cff]/10 bg-[#168cff]/4.5 text-[#168cff] transition-all duration-300 group-hover:border-[#168cff]/25 group-hover:bg-[#168cff]/8">
+                        <Icon size={16} strokeWidth={1.8} />
                       </div>
 
                       <div className="min-w-0">
@@ -563,7 +551,7 @@ const About = () => {
                           {item.label}
                         </p>
 
-                        <p className="mt-1 wrap-break-word text-sm font-medium text-gray-300 transition-colors duration-300 group-hover:text-white">
+                        <p className="mt-1 wrap-break-word text-sm font-medium leading-5 text-gray-300 transition-colors duration-300 group-hover:text-white">
                           {item.value}
                         </p>
                       </div>
@@ -572,60 +560,21 @@ const About = () => {
                 );
               })}
             </div>
-
-            {/* CV */}
-            <motion.a
-              initial="hidden"
-              whileInView="visible"
-              viewport={{
-                once: true,
-                amount: 0.2,
-              }}
-              variants={fadeUp}
-              href={aboutData.cvUrl}
-              download
-              whileHover={{
-                y: -3,
-                boxShadow:
-                  "0 0 35px rgba(22,140,255,0.20)",
-              }}
-              whileTap={{
-                scale: 0.97,
-              }}
-              className="group relative mt-8 inline-flex items-center gap-3 overflow-hidden rounded-xl border border-[#168cff]/35 bg-linear-to-r from-[#168cff]/10 to-violet-500/6 px-5 py-3 text-sm font-semibold text-gray-200 backdrop-blur-md transition-all duration-300 hover:border-[#168cff]/60 hover:text-white"
-            >
-              {/* Shine */}
-              <span className="absolute inset-y-0 -left-full w-1/2 skew-x-[-20deg] bg-linear-to-r from-transparent via-white/10 to-transparent transition-all duration-700 group-hover:left-[120%]" />
-
-              <Download
-                size={16}
-                className="relative text-[#38bdf8] transition-transform duration-300 group-hover:translate-y-0.5"
-              />
-
-              <span className="relative">
-                Download CV
-              </span>
-
-              <ArrowUpRight
-                size={15}
-                className="relative text-gray-600 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#38bdf8]"
-              />
-            </motion.a>
-          </div>
+          </motion.div>
 
           {/* EDUCATION */}
-          <div className="min-w-0">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{
+              once: true,
+              amount: 0.12,
+            }}
+            variants={fadeRight}
+            className="min-w-0"
+          >
             {/* Heading */}
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{
-                once: true,
-                amount: 0.15,
-              }}
-              variants={fadeRight}
-              className="mb-8 flex items-center gap-4"
-            >
+            <div className="mb-7 flex items-center gap-4">
               <div>
                 <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#168cff]">
                   My Journey
@@ -637,7 +586,7 @@ const About = () => {
               </div>
 
               <div className="h-px flex-1 bg-linear-to-r from-white/10 to-transparent" />
-            </motion.div>
+            </div>
 
             {/* Timeline */}
             <div className="relative">
@@ -645,71 +594,69 @@ const About = () => {
               <div className="absolute bottom-2 left-2 top-2 w-px bg-linear-to-b from-[#168cff]/60 via-[#168cff]/20 to-transparent" />
 
               <div className="space-y-5">
-                {aboutData.education.map(
-                  (item, index) => (
-                    <motion.div
-                      key={`${item.year}-${index}`}
-                      initial="hidden"
-                      whileInView="visible"
-                      viewport={{
-                        once: true,
-                        amount: 0.18,
-                      }}
-                      variants={fadeUp}
-                      whileHover={{
-                        x: 4,
-                      }}
-                      transition={{
-                        duration: 0.25,
-                      }}
-                      className="group relative pl-9 sm:pl-10"
-                    >
-                      {/* Timeline dot */}
-                      <div className="absolute left-0 top-1 flex h-4.5 w-4.5 items-center justify-center rounded-full border-2 border-[#168cff]/60 bg-[#02050b] transition-all duration-300 group-hover:border-[#38bdf8] group-hover:shadow-[0_0_18px_rgba(22,140,255,0.45)]">
-                        <span className="h-1.5 w-1.5 rounded-full bg-[#168cff] transition-all duration-300 group-hover:scale-125 group-hover:bg-[#38bdf8]" />
+                {aboutData.education.map((item, index) => (
+                  <motion.div
+                    key={`${item.year}-${index}`}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{
+                      once: true,
+                      amount: 0.18,
+                    }}
+                    variants={fadeUp}
+                    whileHover={{
+                      x: 4,
+                    }}
+                    transition={{
+                      duration: 0.25,
+                    }}
+                    className="group relative pl-9 sm:pl-10"
+                  >
+                    {/* Timeline dot */}
+                    <div className="absolute left-0 top-1 flex h-4.5 w-4.5 items-center justify-center rounded-full border-2 border-[#168cff]/60 bg-[#02050b] transition-all duration-300 group-hover:border-[#38bdf8] group-hover:shadow-[0_0_18px_rgba(22,140,255,0.45)]">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#168cff] transition-all duration-300 group-hover:scale-125 group-hover:bg-[#38bdf8]" />
+                    </div>
+
+                    {/* Card */}
+                    <div className="relative overflow-hidden rounded-2xl border border-white/6 bg-[#080d15]/70 p-5 backdrop-blur-md transition-all duration-300 group-hover:border-[#168cff]/20 group-hover:bg-[#168cff]/2.5">
+                      {/* Glow */}
+                      <div className="pointer-events-none absolute -right-10 -top-10 h-24 w-24 rounded-full bg-[#168cff]/0 blur-3xl transition-all duration-500 group-hover:bg-[#168cff]/10" />
+
+                      {/* Header */}
+                      <div className="relative flex items-center justify-between gap-3">
+                        <span className="rounded-full border border-[#168cff]/15 bg-[#168cff]/6 px-3 py-1 text-[10px] font-semibold tracking-wide text-[#5fb8ff] sm:text-xs">
+                          {item.year}
+                        </span>
+
+                        <GraduationCap
+                          size={17}
+                          className="text-gray-700 transition-colors duration-300 group-hover:text-[#168cff]"
+                        />
                       </div>
 
-                      {/* Card */}
-                      <div className="relative overflow-hidden rounded-2xl border border-white/6 bg-[#080d15]/70 p-5 backdrop-blur-md transition-all duration-300 group-hover:border-[#168cff]/20 group-hover:bg-[#168cff]/2.5">
-                        {/* Glow */}
-                        <div className="pointer-events-none absolute -right-10 -top-10 h-24 w-24 rounded-full bg-[#168cff]/0 blur-3xl transition-all duration-500 group-hover:bg-[#168cff]/10" />
+                      {/* Degree */}
+                      <h4 className="relative mt-4 text-[17px] font-bold leading-snug tracking-tight text-white transition-colors duration-300 group-hover:text-[#8acbff] sm:text-[19px]">
+                        {item.degree}
+                      </h4>
 
-                        {/* Header */}
-                        <div className="relative flex items-center justify-between gap-3">
-                          <span className="rounded-full border border-[#168cff]/15 bg-[#168cff]/6 px-3 py-1 text-[10px] font-semibold tracking-wide text-[#5fb8ff] sm:text-xs">
-                            {item.year}
-                          </span>
+                      {/* Institution */}
+                      <p className="relative mt-2 text-sm leading-6 text-gray-500">
+                        {item.institution}
+                      </p>
 
-                          <GraduationCap
-                            size={17}
-                            className="text-gray-700 transition-colors duration-300 group-hover:text-[#168cff]"
-                          />
+                      {/* Current indicator */}
+                      {index === 0 && (
+                        <div className="relative mt-4 inline-flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-[0.14em] text-emerald-400/70">
+                          <CheckCircle2 size={12} />
+                          Currently pursuing
                         </div>
-
-                        {/* Degree */}
-                        <h4 className="relative mt-4 text-[17px] font-bold leading-snug tracking-tight text-white transition-colors duration-300 group-hover:text-[#8acbff] sm:text-[19px]">
-                          {item.degree}
-                        </h4>
-
-                        {/* Institution */}
-                        <p className="relative mt-2 text-sm leading-6 text-gray-500">
-                          {item.institution}
-                        </p>
-
-                        {/* Current indicator */}
-                        {index === 0 && (
-                          <div className="relative mt-4 inline-flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-[0.14em] text-emerald-400/70">
-                            <CheckCircle2 size={12} />
-                            Currently pursuing
-                          </div>
-                        )}
-                      </div>
-                    </motion.div>
-                  )
-                )}
+                      )}
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* FINAL CTA */}
@@ -742,7 +689,8 @@ const About = () => {
             <h3 className="mx-auto mt-5 max-w-2xl text-2xl font-bold leading-tight tracking-tight sm:text-3xl">
               Technology should solve problems,
               <span className="text-gray-500">
-                {" "}not create more of them.
+                {" "}
+                not create more of them.
               </span>
             </h3>
 
