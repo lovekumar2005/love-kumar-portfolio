@@ -503,13 +503,8 @@ const About = () => {
             {/* Heading */}
             <div className="mb-7 flex items-center gap-4">
               <div>
-                <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#168cff]">
-                  Personal
-                </p>
-
-                <h3 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">
-                  A little more about me
-                </h3>
+                <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#168cff]">Personal</p>
+                <h3 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">A little more about me</h3>
               </div>
 
               <div className="h-px flex-1 bg-linear-to-r from-white/10 to-transparent" />
@@ -536,7 +531,7 @@ const About = () => {
                     transition={{
                       duration: 0.25,
                     }}
-                    className="group relative min-h-[82px] overflow-hidden rounded-2xl border border-white/6 bg-[#080d15]/70 p-4 backdrop-blur-md transition-all duration-300 hover:border-[#168cff]/20 hover:bg-[#168cff]/2.5"
+                    className="group relative min-h-20.5 overflow-hidden rounded-2xl border border-white/6 bg-[#080d15]/70 p-4 backdrop-blur-md transition-all duration-300 hover:border-[#168cff]/20 hover:bg-[#168cff]/2.5"
                   >
                     {/* Hover glow */}
                     <div className="pointer-events-none absolute -right-8 -top-8 h-20 w-20 rounded-full bg-[#168cff]/0 blur-2xl transition-all duration-500 group-hover:bg-[#168cff]/10" />
