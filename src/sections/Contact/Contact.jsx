@@ -117,7 +117,6 @@ const contactInfo = [
 ];
 
 /* SOCIAL LINKS */
-
 const socialLinks = [
   {
     name: "GitHub",

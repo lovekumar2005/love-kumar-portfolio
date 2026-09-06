@@ -106,7 +106,7 @@ const aboutData = {
     },
   ],
 
-  cvUrl: "/cv.pdf",
+  cvUrl: "/Love-kumar-CV.pdf",
 };
 
 /* CORE AREAS */
@@ -132,8 +132,6 @@ const focusAreas = [
 ];
 
 /* ANIMATIONS */
-
-/* Individual fade-up animation */
 const fadeUp = {
   hidden: {
     opacity: 0,
@@ -519,13 +517,8 @@ const About = () => {
               className="mb-7 flex items-center gap-4"
             >
               <div>
-                <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#168cff]">
-                  Personal
-                </p>
-
-                <h3 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">
-                  A little more about me
-                </h3>
+                <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#168cff]">Personal</p>
+                <h3 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">A little more about me</h3>
               </div>
 
               <div className="h-px flex-1 bg-linear-to-r from-white/10 to-transparent" />

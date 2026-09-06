@@ -114,8 +114,6 @@ const projects = [
 ];
 
 /* ANIMATIONS */
-
-/* Individual element animation */
 const fadeUpVariants = {
   hidden: {
     opacity: 0,

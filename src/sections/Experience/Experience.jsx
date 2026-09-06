@@ -83,11 +83,6 @@ const journeyData = [
 ];
 
 /* ANIMATIONS */
-
-/*
-  Used only for groups where multiple elements
-  should appear smoothly together.
-*/
 const containerVariants = {
   hidden: {},
 
@@ -99,12 +94,6 @@ const containerVariants = {
   },
 };
 
-/*
-  Smooth vertical entrance.
-
-  Smaller movement keeps the animation subtle
-  and avoids the "jumping" feeling while scrolling.
-*/
 const cardVariants = {
   hidden: {
     opacity: 0,

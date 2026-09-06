@@ -334,13 +334,11 @@ const Footer = () => {
             }}
             variants={fadeRight}
           >
-            <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.18em] text-white">
-              Connect
-            </h3>
+            <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.18em] text-white">Connect</h3>
 
             {/* Email */}
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:lovepehlaj2005@gmail.com"
               className="group mb-4 flex items-center gap-3"
             >
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/[0.07] bg-white/.5 text-gray-500 transition-all duration-300 group-hover:border-[#168cff]/20 group-hover:bg-[#168cff]/5 group-hover:text-[#168cff]">
@@ -348,13 +346,8 @@ const Footer = () => {
               </div>
 
               <div>
-                <p className="text-[10px] text-gray-600">
-                  Email
-                </p>
-
-                <p className="text-xs text-gray-400 transition-colors group-hover:text-white">
-                  lovepehlaj2005@gmail.com
-                </p>
+                <p className="text-[10px] text-gray-600">Email</p>
+                <p className="text-xs text-gray-400 transition-colors group-hover:text-white">lovepehlaj2005@gmail.com</p>
               </div>
             </a>
 
@@ -365,13 +358,8 @@ const Footer = () => {
               </div>
 
               <div>
-                <p className="text-[10px] text-gray-600">
-                  Location
-                </p>
-
-                <p className="text-xs text-gray-400">
-                  Lahore, Pakistan
-                </p>
+                <p className="text-[10px] text-gray-600">Location</p>
+                <p className="text-xs text-gray-400">Lahore, Pakistan</p>
               </div>
             </div>
 

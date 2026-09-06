@@ -165,7 +165,6 @@ const fiverrUrl = "https://www.fiverr.com/love_aswani/";
 const linkedInUrl = "https://www.linkedin.com/in/love-kumar-23866a292/";
 
 /* SOCIAL BUTTON STYLE */
-
 const socialButtonClass = "flex h-9.5 w-9.5 items-center justify-center rounded-lg border border-white/10 bg-white/[0.025] text-slate-400 transition-all duration-300 hover:border-[#168cff]/40 hover:bg-[#168cff]/8 hover:text-[#168cff]";
 
 
@@ -175,8 +174,7 @@ const Navbar = () => {
 
   /* ACTIVE SECTION DETECTION */
   useEffect(() => {
-    const sections = navLinks
-      .map((link) => {
+    const sections = navLinks.map((link) => {
         const id = link.href.replace("#", "");
         return document.getElementById(id);
       })
@@ -230,25 +228,10 @@ const Navbar = () => {
 
   return (
     <motion.header
-      initial={{
-        y: -80,
-        opacity: 0,
-      }}
-      animate={{
-        y: 0,
-        opacity: 1,
-      }}
-      transition={{
-        duration: 0.7,
-        ease: [0.22, 1, 0.36, 1],
-      }}
-      className="
-        fixed left-0 top-0 z-50 w-full
-        border-b border-[#168cff]/30
-        bg-[#030712]/92
-        backdrop-blur-xl
-        shadow-[0_8px_30px_rgba(0,0,0,0.35)]
-      "
+      initial={{y: -80, opacity: 0,}}
+      animate={{y: 0, opacity: 1,}}
+      transition={{duration: 0.7, ease: [0.22, 1, 0.36, 1],}}
+      className="fixed left-0 top-0 z-50 w-full border-b border-[#168cff]/30 bg-[#030712]/92 backdrop-blur-xl shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
     >
       {/* BOTTOM GLOW */}
       <div className="pointer-events-none absolute -bottom-8 left-1/2 h-12 w-[55%] -translate-x-1/2 rounded-full bg-[#168cff]/8 blur-2xl" />
@@ -293,10 +276,7 @@ const Navbar = () => {
                   }
                 `}
               >
-                <Icon
-                  size={15}
-                  strokeWidth={1.7}
-                />
+                <Icon size={15} strokeWidth={1.7}/>
                 {link.name}
                 {isActive && (
                   <motion.span
@@ -425,11 +405,7 @@ const Navbar = () => {
           aria-label="Toggle navigation"
           aria-expanded={isOpen}
         >
-          {isOpen ? (
-            <X size={22} />
-          ) : (
-            <Menu size={22} />
-          )}
+          {isOpen ? (<X size={22} />) : (<Menu size={22} />)}
         </button>
       </div>
 
@@ -437,30 +413,17 @@ const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{
-              opacity: 0,
-              height: 0,
-            }}
-            animate={{
-              opacity: 1,
-              height: "auto",
-            }}
-            exit={{
-              opacity: 0,
-              height: 0,
-            }}
-            transition={{
-              duration: 0.3,
-              ease: [0.22, 1, 0.36, 1],
-            }}
+            initial={{opacity: 0, height: 0,}}
+            animate={{opacity: 1, height: "auto",}}
+            exit={{opacity: 0, height: 0,}}
+            transition={{duration: 0.3, ease: [0.22, 1, 0.36, 1],}}
             className="overflow-hidden border-t border-white/5 bg-[#030712]/98 backdrop-blur-xl lg:hidden"
           >
             <nav className="mx-auto flex w-[calc(100%-32px)] max-w-125 flex-col py-4 sm:w-[calc(100%-40px)]">
               {/* SECTION LINKS */}
               {navLinks.map((link, index) => {
                 const Icon = link.icon;
-                const isActive =
-                  active === link.name;
+                const isActive = active === link.name;
 
                 return (
                   <motion.a
@@ -469,17 +432,9 @@ const Navbar = () => {
                     onClick={() =>
                       handleNavClick(link.name)
                     }
-                    initial={{
-                      opacity: 0,
-                      x: -15,
-                    }}
-                    animate={{
-                      opacity: 1,
-                      x: 0,
-                    }}
-                    transition={{
-                      delay: index * 0.04,
-                    }}
+                    initial={{opacity: 0, x: -15,}}
+                    animate={{opacity: 1, x: 0,}}
+                    transition={{delay: index * 0.04,}}
                     className={` flex items-center gap-3 border-b border-white/5 py-4 text-sm font-medium transition-colors duration-200
                       ${
                         isActive
@@ -488,10 +443,7 @@ const Navbar = () => {
                       }
                     `}
                   >
-                    <Icon
-                      size={18}
-                      strokeWidth={1.7}
-                    />
+                    <Icon size={18} strokeWidth={1.7}/>
                     {link.name}
                   </motion.a>
                 );

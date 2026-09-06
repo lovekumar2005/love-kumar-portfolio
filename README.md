@@ -1,39 +1,35 @@
 # Love Kumar — Personal Portfolio
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React-2026-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
-  <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n">
-  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI">
-</p>
+A modern personal portfolio showcasing my work in **AI Automation, Front-End Development, projects, experience, and technical skills**.
 
-## About
+The portfolio also includes an **AI-powered chatbot** that can answer questions about my skills, projects, experience, and background.
 
-Personal portfolio website showcasing my skills, projects, experience, and work in AI automation and web development.
+## Live Demo
 
-The portfolio features an AI-powered chatbot that provides information about my skills, projects, experience, and background.
+**Portfolio:**
+[love-kumar-portfolio.vercel.app](https://love-kumar-portfolio.vercel.app/?utm_source=chatgpt.com)
 
-## Features
+## Overview
 
-* Modern and responsive design
-* AI-powered portfolio chatbot
-* React and Vite
-* Tailwind CSS
-* Framer Motion animations
-* Responsive design for desktop and mobile
-* Downloadable CV
-* n8n and OpenAI integration
-* Project and skills showcase
+This portfolio provides a professional overview of my work in **AI Automation and Front-End Development**.
 
-## Tech Stack
+It combines a clean, responsive interface with an AI-powered assistant to make exploring my work more interactive.
 
-**Frontend:** React, JavaScript, Tailwind CSS, Framer Motion
-**AI & Automation:** n8n, OpenAI, REST APIs
-**Tools:** Git, GitHub, Vite
+## Author
+
+**Love Kumar**
+AI Automation Developer · n8n Workflow Engineer · Front-End Developer
+
+**Portfolio:** [love-kumar-portfolio.vercel.app](https://love-kumar-portfolio.vercel.app/?utm_source=chatgpt.com)
+**GitHub:** [github.com/lovekumar2005](https://github.com/lovekumar2005?utm_source=chatgpt.com)
+**LinkedIn:** [linkedin.com/in/love-kumar-23866a292](https://www.linkedin.com/in/love-kumar-23866a292/?utm_source=chatgpt.com)
 
 ---
 
-<p align="center">
-  <strong>AI Automation Developer | React Developer</strong>
-</p>
+<div align="center">
+
+**Built with React, AI, and automation.**
+
+© 2026 Love Kumar
+
+</div>
