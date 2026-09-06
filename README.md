@@ -20,10 +20,6 @@ It combines a clean, responsive interface with an AI-powered assistant to make e
 **Love Kumar**
 AI Automation Developer · n8n Workflow Engineer · Front-End Developer
 
-**Portfolio:** [love-kumar-portfolio.vercel.app](https://love-kumar-portfolio.vercel.app/?utm_source=chatgpt.com)
-**GitHub:** [github.com/lovekumar2005](https://github.com/lovekumar2005?utm_source=chatgpt.com)
-**LinkedIn:** [linkedin.com/in/love-kumar-23866a292](https://www.linkedin.com/in/love-kumar-23866a292/?utm_source=chatgpt.com)
-
 ---
 
 <div align="center">
