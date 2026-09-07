@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import ChatButton from "./ChatButton";
 import ChatWindow from "./ChatWindow";
+import WhatsAppButton from "../WhatsAppButton/WhatsAppButton";
 
 const INITIAL_MESSAGES = [
   {
@@ -23,6 +24,7 @@ const createSessionId = () => {
   const newSession = crypto.randomUUID();
 
   localStorage.setItem("portfolio-chat-session", newSession);
+
   return newSession;
 };
 
@@ -32,6 +34,7 @@ const getSessionId = () => {
   }
 
   const existingSession = localStorage.getItem("portfolio-chat-session");
+
   if (existingSession) {
     return existingSession;
   }
@@ -97,9 +100,10 @@ const PortfolioChatbot = () => {
     setInput("");
     setIsTyping(true);
 
-    //Send message to n8n
+    // Send message to n8n
     try {
-      const response = await fetch("https://abdullahrasheed.app.n8n.cloud/webhook/portfolio-chat",
+      const response = await fetch(
+        "https://abdullahrasheed.app.n8n.cloud/webhook/portfolio-chat",
         {
           method: "POST",
 
@@ -115,7 +119,7 @@ const PortfolioChatbot = () => {
         }
       );
 
-      //Response
+      // Response
       if (!response.ok) {
         throw new Error(
           `n8n request failed: ${response.status}`
@@ -125,7 +129,11 @@ const PortfolioChatbot = () => {
       const data = await response.json();
 
       // GET AI RESPONSE
-      const aiReply = data.reply || data.output || data.response || data.message;
+      const aiReply =
+        data.reply ||
+        data.output ||
+        data.response ||
+        data.message;
 
       // FALLBACK
       if (!aiReply) {
@@ -189,12 +197,20 @@ const PortfolioChatbot = () => {
 
   return (
     <>
+      {/* Floating buttons */}
       {!isOpen && (
-        <ChatButton
-          onClick={() => setIsOpen(true)}
-        />
+        <>
+          {/* WhatsApp Button */}
+          <WhatsAppButton />
+
+          {/* AI Chat Button */}
+          <ChatButton
+            onClick={() => setIsOpen(true)}
+          />
+        </>
       )}
 
+      {/* Chat Window */}
       <ChatWindow
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
