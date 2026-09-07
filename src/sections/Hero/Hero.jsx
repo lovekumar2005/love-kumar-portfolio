@@ -404,7 +404,7 @@ const Hero = () => {
             </motion.div>
 
             {/* WORKFLOW CARD */}
-            <motion.div
+            {/* <motion.div
               animate={{
                 y: [0, 9, 0],
               }}
@@ -430,7 +430,7 @@ const Hero = () => {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* SPARK */}
             <motion.div

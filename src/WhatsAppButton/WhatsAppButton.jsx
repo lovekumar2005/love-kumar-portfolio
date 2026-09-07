@@ -1,18 +1,28 @@
 import { motion } from "framer-motion";
-import { Bot } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
-const ChatButton = ({ onClick }) => {
+const WhatsAppButton = () => {
+  const whatsappNumber = "923313859556";
+
+  const message = encodeURIComponent(
+    "Hi Love, I visited your portfolio and would like to discuss a project."
+  );
+
   return (
     <div
       className="
         group
         fixed
+
         right-4
-        bottom-5
+        bottom-[85px]
+
         sm:right-6
-        sm:bottom-6
+        sm:bottom-[90px]
+
         lg:right-8
-        lg:bottom-8
+        lg:bottom-[100px]
+
         z-[9999]
 
         flex
@@ -40,13 +50,17 @@ const ChatButton = ({ onClick }) => {
           h-[72px]
           w-[72px]
           rounded-full
-          bg-[#008cff]/30
+          bg-[#25D366]/30
           blur-xl
         "
       />
 
       {/* Main button */}
-      <motion.button
+      <motion.a
+        href={`https://wa.me/${whatsappNumber}?text=${message}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with me on WhatsApp"
         initial={{
           opacity: 0,
           scale: 0.7,
@@ -66,15 +80,13 @@ const ChatButton = ({ onClick }) => {
           duration: 0.35,
           ease: [0.22, 1, 0.36, 1],
         }}
-        onClick={onClick}
-        aria-label="Open Love's AI Assistant"
         className="
           relative
           z-10
 
           flex
-          h-[62px]
-          w-[62px]
+          h-[60px]
+          w-[60px]
           shrink-0
 
           items-center
@@ -84,22 +96,22 @@ const ChatButton = ({ onClick }) => {
           rounded-full
 
           border-2
-          border-[#008cff]/70
+          border-[#25D366]/70
 
           bg-gradient-to-br
-          from-[#0f4d82]
-          via-[#082b50]
-          to-[#03101f]
+          from-[#2EEA78]
+          via-[#25D366]
+          to-[#159447]
 
-          text-[#00a8ff]
+          text-white
 
-          shadow-[0_8px_30px_rgba(0,140,255,0.5)]
+          shadow-[0_8px_30px_rgba(37,211,102,0.5)]
 
           transition-all
           duration-300
 
-          hover:border-[#19b5ff]
-          hover:shadow-[0_10px_40px_rgba(0,140,255,0.75)]
+          hover:border-[#55f58b]
+          hover:shadow-[0_10px_40px_rgba(37,211,102,0.75)]
         "
       >
         {/* Shine */}
@@ -113,7 +125,7 @@ const ChatButton = ({ onClick }) => {
             w-8
             rotate-[25deg]
             rounded-full
-            bg-white/15
+            bg-white/20
             blur-md
             transition-all
             duration-700
@@ -128,8 +140,8 @@ const ChatButton = ({ onClick }) => {
             absolute
             inset-1
             rounded-full
-            bg-[#008cff]/10
-            shadow-[inset_0_0_25px_rgba(0,140,255,0.45)]
+            bg-white/5
+            shadow-[inset_0_0_25px_rgba(255,255,255,0.18)]
           "
         />
 
@@ -141,29 +153,28 @@ const ChatButton = ({ onClick }) => {
             h-8
             w-8
             rounded-full
-            bg-[#008cff]/10
+            bg-white/10
             blur-lg
           "
         />
 
-        {/* Bot icon */}
-        <Bot
+        {/* WhatsApp icon */}
+        <FaWhatsapp
           size={30}
-          strokeWidth={1.8}
           className="
             relative
             z-10
 
-            text-[#00a8ff]
+            text-white
+
+            drop-shadow-[0_2px_5px_rgba(0,0,0,0.25)]
 
             transition-all
             duration-300
 
             group-hover:scale-110
 
-            group-hover:text-[#20baff]
-
-            group-hover:drop-shadow-[0_0_12px_rgba(0,168,255,1)]
+            group-hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]
           "
         />
 
@@ -189,7 +200,7 @@ const ChatButton = ({ onClick }) => {
             w-3.5
 
             rounded-full
-            bg-emerald-400
+            bg-emerald-300
           "
         />
 
@@ -207,14 +218,14 @@ const ChatButton = ({ onClick }) => {
             rounded-full
 
             border-2
-            border-[#071525]
+            border-[#0a2416]
 
             bg-emerald-400
 
             shadow-[0_0_12px_rgba(52,211,153,1)]
           "
         />
-      </motion.button>
+      </motion.a>
 
       {/* Tooltip */}
       <span
@@ -252,11 +263,11 @@ const ChatButton = ({ onClick }) => {
           group-hover:opacity-100
         "
       >
-        Ask AI
-        <span className="ml-1 text-[#00a8ff]">✦</span>
+        Let's Chat
+        <span className="ml-1 text-[#25D366]">↗</span>
       </span>
     </div>
   );
 };
 
-export default ChatButton;
+export default WhatsAppButton;

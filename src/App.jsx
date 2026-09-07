@@ -8,6 +8,7 @@ import Projects from './sections/Projects/Projects'
 import Contact from './sections/Contact/Contact'
 import Footer from './sections/Footer/Footer'
 import PortfolioChatbot from './PortfolioChatbot/PortfolioChatbot'
+import WhatsAppButton from './WhatsAppButton/WhatsAppButton'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Projects/>
       <Contact/>
       <Footer/>
+      <WhatsAppButton/>
       <PortfolioChatbot/>
     </div>
   )
