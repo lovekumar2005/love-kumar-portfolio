@@ -403,35 +403,6 @@ const Hero = () => {
               </span>
             </motion.div>
 
-            {/* WORKFLOW CARD */}
-            {/* <motion.div
-              animate={{
-                y: [0, 9, 0],
-              }}
-              transition={{
-                duration: 4.5,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="absolute bottom-[12%] right-[0%] z-20 hidden rounded-2xl border border-white/8 bg-[#08111f]/80 p-3 shadow-2xl backdrop-blur-xl sm:block lg:right-[-2%]"
-            >
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-purple-500/10 text-purple-400">
-                  <Workflow size={18} />
-                </div>
-
-                <div>
-                  <p className="text-[10px] text-gray-500">
-                    Automating
-                  </p>
-
-                  <p className="text-xs font-semibold text-white sm:text-sm">
-                    Workflows
-                  </p>
-                </div>
-              </div>
-            </motion.div> */}
-
             {/* SPARK */}
             <motion.div
               animate={{
