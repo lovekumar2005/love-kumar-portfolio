@@ -257,11 +257,7 @@ const Skills = () => {
               size={13}
               className="text-[#168cff]"
             />
-
-            <span className="text-[10px] font-semibold uppercase tracking-[0.35em] text-[#168cff] sm:text-xs">
-              MY TOOLKIT
-            </span>
-
+            <span className="text-[10px] font-semibold uppercase tracking-[0.35em] text-[#168cff] sm:text-xs">MY TOOLKIT</span>
             <Sparkles
               size={13}
               className="text-[#168cff]"
@@ -336,7 +332,7 @@ const Skills = () => {
                     ease: "easeOut",
                   },
                 }}
-                className="group relative overflow-hidden rounded-xl border border-white/10 bg-[#0a0f17]/75 p-6 backdrop-blur-xl sm:p-7"
+                className="group relative overflow-hidden rounded-xl border border-white/8 bg-[#0b1625] p-6 backdrop-blur-xl sm:p-7"
               >
 
                 {/* Card hover glow */}
@@ -397,7 +393,7 @@ const Skills = () => {
                       </div>
 
                       {/* Progress track */}
-                      <div className="h-1.25 w-full overflow-hidden rounded-full bg-white/[0.07]">
+                      <div className="h-1.25 w-full overflow-hidden rounded-full bg-[#07111f]">
 
                         {/* Animated progress */}
                         <motion.div

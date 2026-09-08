@@ -4,7 +4,6 @@ import {
   Bot,
   Code2,
   Workflow,
-  GraduationCap,
   ArrowUpRight,
   CalendarDays,
 } from "lucide-react";
@@ -16,75 +15,51 @@ const journeyData = [
     year: "2026 — Present",
     type: "CURRENT FOCUS",
     title: "AI Automation & Frontend Development",
-    organization: "Independent Projects",
+    organization: "Independent Development",
     description:
-      "A passionate learner focused on turning real-world problems into practical solutions through AI, automation, and modern web technologies.",
+      "Focused on building intelligent automation systems and modern web interfaces using AI tools, automation platforms, APIs, and React.",
     icon: Bot,
-    tags: [
-      "AI Automation",
-      "React",
-      "n8n",
-      "Make",
-      "APIs",
-    ],
+    tags: ["AI Automation", "React", "n8n", "Make", "APIs"],
   },
 
   {
     number: "02",
-    year: "2024 — Present",
-    type: "EDUCATION",
-    title: "BSc | Business & Information Technology",
-    organization: "University of Punjab, Lahore",
+    year: "2025 — Present",
+    type: "BUILDING",
+    title: "Building Real-World Projects",
+    organization: "Personal Projects",
     description:
-      "Studying business and information technology while developing practical knowledge in programming, software development, automation, and emerging technologies.",
-    icon: GraduationCap,
-    tags: [
-      "IT",
-      "Business",
-      "Programming",
-      "Technology",
-    ],
+      "Turning ideas into practical applications including AI automation workflows, WhatsApp assistants, recruitment systems, social media automation, and web applications.",
+    icon: Code2,
+    tags: ["AI Projects", "Automation", "React", "APIs", "Web Apps"],
   },
 
   {
     number: "03",
-    year: "2024 — Present",
-    type: "BUILDING",
-    title: "Learning Through Projects",
-    organization: "Personal Development",
+    year: "2026 — Present",
+    type: "FREELANCING",
+    title: "Automation & Client Solutions",
+    organization: "Freelance Development",
     description:
-      "Turning ideas into practical projects by experimenting with frontend development, APIs, automation platforms, and AI-powered solutions.",
-    icon: Code2,
-    tags: [
-      "JavaScript",
-      "React",
-      "Tailwind",
-      "APIs",
-      "Projects",
-    ],
+      "Working toward solving real business problems through automation, API integrations, AI-powered workflows, and responsive frontend solutions.",
+    icon: Workflow,
+    tags: ["n8n", "Make", "AI", "API Integration", "Solutions"],
   },
 
   {
     number: "04",
-    year: "2022 — 2024",
-    type: "FOUNDATION",
-    title: "Pre-Engineering",
-    organization: "Degree College, Mithi",
+    year: "2024 — Present",
+    type: "LEARNING",
+    title: "Programming & Problem Solving",
+    organization: "Continuous Learning",
     description:
-      "Developed a strong foundation in mathematics, science, analytical thinking, and problem solving before moving deeper into information technology.",
-    icon: Workflow,
-    tags: [
-      "Mathematics",
-      "Science",
-      "Problem Solving",
-    ],
+      "Strengthening programming fundamentals and problem-solving skills through JavaScript, React, C++, Python, DSA, and hands-on development practice.",
+    icon: Code2,
+    tags: ["JavaScript", "C++", "Python", "DSA", "Problem Solving"],
   },
 ];
 
-/* =========================================================
-   ANIMATIONS
-========================================================= */
-
+/* ANIMATIONS */
 const containerVariants = {
   hidden: {},
 
@@ -99,7 +74,7 @@ const containerVariants = {
 const cardVariants = {
   hidden: {
     opacity: 0,
-    y: 24,
+    y: 20,
   },
 
   visible: {
@@ -107,7 +82,7 @@ const cardVariants = {
     y: 0,
 
     transition: {
-      duration: 0.72,
+      duration: 0.65,
       ease: [0.22, 1, 0.36, 1],
     },
   },
@@ -117,12 +92,9 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="relative overflow-hidden bg-[#02050b] py-24 text-white sm:py-28 lg:py-32"
+      className="relative overflow-hidden bg-[#02050b] py-20 text-white sm:py-24 lg:py-28"
     >
-      {/* =====================================================
-          BACKGROUND
-      ===================================================== */}
-
+      {/* BACKGROUND */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
 
         {/* Main background */}
@@ -169,22 +141,16 @@ const Experience = () => {
         />
 
         {/* Top fade */}
-        <div className="absolute left-0 right-0 top-0 h-40 bg-linear-to-b from-[#02050b] to-transparent" />
+        <div className="absolute left-0 right-0 top-0 h-32 bg-linear-to-b from-[#02050b] to-transparent" />
 
         {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-linear-to-t from-[#02050b] to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-[#02050b] to-transparent" />
       </div>
 
-      {/* =====================================================
-          CONTAINER
-      ===================================================== */}
+      {/* CONTAINER */}
+      <div className="relative z-10 mx-auto w-[calc(100%-32px)] max-w-6xl sm:w-[calc(100%-48px)] lg:w-[calc(100%-64px)]">
 
-      <div className="relative z-10 mx-auto w-[calc(100%-32px)] max-w-7xl sm:w-[calc(100%-48px)] lg:w-[calc(100%-64px)]">
-
-        {/* ===================================================
-            HEADER
-        =================================================== */}
-
+        {/* HEADER */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -193,33 +159,27 @@ const Experience = () => {
             amount: 0.12,
           }}
           variants={cardVariants}
-          className="mb-16 text-center sm:mb-20"
+          className="mb-12 text-center sm:mb-14"
         >
           {/* Eyebrow */}
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#168cff]/20 bg-[#168cff]/4.5 px-4 py-2 backdrop-blur-md">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#168cff]/20 bg-[#168cff]/4.5 px-3.5 py-1.5 backdrop-blur-md">
             <Sparkles
-              size={13}
+              size={12}
               className="text-[#38bdf8]"
             />
-
-            <span className="text-[10px] font-semibold uppercase tracking-[0.32em] text-[#7dc8ff] sm:text-xs">
-              My Journey
-            </span>
+            <span className="text-[9px] font-semibold uppercase tracking-[0.3em] text-[#7dc8ff] sm:text-[10px]">My Journey</span>
           </div>
 
           {/* Heading */}
-          <h2 className="text-[36px] font-bold leading-[1.05] tracking-[-0.04em] sm:text-[46px] md:text-[52px]">
-            Experience{" "}
-            <span className="bg-linear-to-r from-[#168cff] via-[#38bdf8] to-[#8b5cf6] bg-clip-text text-transparent">
-              & Journey
-            </span>
+          <h2 className="text-[32px] font-bold leading-[1.05] tracking-[-0.04em] sm:text-[42px] md:text-[48px]">
+            My{" "}
+            <span className="bg-linear-to-r from-[#168cff] via-[#38bdf8] to-[#8b5cf6] bg-clip-text text-transparent">Journey</span>
           </h2>
 
           {/* Description */}
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-500 sm:text-base">
-            A collection of the experiences, projects, and
-            learning milestones that are shaping my journey
-            as a developer.
+          <p className="mx-auto mt-4 max-w-xl text-xs leading-6 text-gray-500 sm:text-sm">
+            A timeline of what I have been learning, building, and working
+            toward as a developer.
           </p>
 
           {/* Underline */}
@@ -229,7 +189,7 @@ const Experience = () => {
               opacity: 0,
             }}
             whileInView={{
-              width: 90,
+              width: 75,
               opacity: 1,
             }}
             viewport={{
@@ -238,17 +198,14 @@ const Experience = () => {
             }}
             transition={{
               delay: 0.15,
-              duration: 0.75,
+              duration: 0.7,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="mx-auto mt-6 h-0.75 rounded-full bg-linear-to-r from-[#168cff] via-[#38bdf8] to-[#8b5cf6] shadow-[0_0_22px_rgba(22,140,255,0.5)]"
+            className="mx-auto mt-5 h-0.5 rounded-full bg-linear-to-r from-[#168cff] via-[#38bdf8] to-[#8b5cf6] shadow-[0_0_18px_rgba(22,140,255,0.5)]"
           />
         </motion.div>
 
-        {/* ===================================================
-            CARDS GRID
-        =================================================== */}
-
+        {/*CARDS GRID*/}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -257,7 +214,7 @@ const Experience = () => {
             amount: 0.08,
           }}
           variants={containerVariants}
-          className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6"
+          className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5"
         >
           {journeyData.map((item) => {
             const Icon = item.icon;
@@ -270,127 +227,99 @@ const Experience = () => {
               >
                 <motion.div
                   whileHover={{
-                    y: -7,
+                    y: -5,
                     transition: {
-                      duration: 0.3,
+                      duration: 0.25,
                       ease: "easeOut",
                     },
                   }}
-                  className="relative h-full overflow-hidden rounded-3xl border border-white/6.5 bg-white/2.5 p-6 backdrop-blur-xl transition-all duration-500 hover:border-[#168cff]/25 hover:bg-white/[0.035] sm:p-7"
+                  className="relative h-full overflow-hidden rounded-2xl border border-white/[0.07] bg-[#0b1625] p-5 shadow-[0_15px_40px_rgba(0,0,0,0.3)] backdrop-blur-xl transition-all duration-500 hover:border-[#168cff]/25 sm:p-6"
                 >
-
                   {/* Card Glow */}
-                  <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-[#168cff]/0 blur-[90px] transition-all duration-700 group-hover:bg-[#168cff]/10" />
+                  <div className="pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-[#168cff]/0 blur-[75px] transition-all duration-700 group-hover:bg-[#168cff]/10" />
 
-                  <div className="pointer-events-none absolute bottom-0 left-0 h-32 w-32 rounded-full bg-violet-500/0 blur-[70px] transition-all duration-700 group-hover:bg-violet-500/6" />
+                  <div className="pointer-events-none absolute bottom-0 left-0 h-24 w-24 rounded-full bg-violet-500/0 blur-[60px] transition-all duration-700 group-hover:bg-violet-500/6" />
 
-                  {/* =================================================
-                      TOP ROW
-                  ================================================= */}
-
+                  {/* TOP ROW */}
                   <div className="relative flex items-start justify-between">
 
                     {/* Sequence Number */}
-                    <div className="flex items-center gap-3">
-                      <span className="text-[42px] font-black leading-none tracking-[-0.06em] text-white/[0.07] transition-all duration-500 group-hover:text-[#168cff]/20 sm:text-[48px]">
+                    <div className="flex items-center gap-2.5">
+                      <span className="text-[34px] font-black leading-none tracking-[-0.06em] text-white/[0.07] transition-all duration-500 group-hover:text-[#168cff]/20 sm:text-[40px]">
                         {item.number}
                       </span>
 
-                      <div className="h-8 w-px bg-linear-to-b from-[#168cff]/50 to-transparent" />
-
-                      <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#168cff] sm:text-[10px]">
+                      <div className="h-7 w-px bg-linear-to-b from-[#168cff]/50 to-transparent" />
+                      <span className="text-[8px] font-bold uppercase tracking-[0.18em] text-[#168cff] sm:text-[9px]">
                         {item.type}
                       </span>
                     </div>
 
                     {/* Icon */}
-                    <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/[0.07] bg-white/2.5 text-gray-500 transition-all duration-500 group-hover:border-[#168cff]/25 group-hover:bg-[#168cff]/[0.07] group-hover:text-[#38bdf8] group-hover:shadow-[0_0_25px_rgba(22,140,255,0.12)]">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/[0.07] bg-[#111f32] text-gray-500 transition-all duration-500 group-hover:border-[#168cff]/25 group-hover:bg-[#168cff]/[0.07] group-hover:text-[#38bdf8] group-hover:shadow-[0_0_20px_rgba(22,140,255,0.12)]">
                       <Icon
-                        size={19}
+                        size={17}
                         strokeWidth={1.7}
                       />
                     </div>
                   </div>
 
-                  {/* =================================================
-                      YEAR
-                  ================================================= */}
-
-                  <div className="relative mt-7 flex items-center gap-2">
+                  {/* YEAR */}
+                  <div className="relative mt-5 flex items-center gap-2">
                     <CalendarDays
-                      size={13}
+                      size={12}
                       className="text-[#168cff]"
                     />
 
-                    <span className="text-xs font-semibold tracking-wide text-[#5fb8ff]">
+                    <span className="text-[11px] font-semibold tracking-wide text-[#5fb8ff]">
                       {item.year}
                     </span>
                   </div>
 
-                  {/* =================================================
-                      TITLE
-                  ================================================= */}
-
-                  <h3 className="relative mt-3 max-w-lg text-[22px] font-bold leading-snug tracking-tight text-white transition-colors duration-300 group-hover:text-[#8acbff] sm:text-[26px]">
+                  {/* TITLE */}
+                  <h3 className="relative mt-2.5 max-w-lg text-[19px] font-bold leading-snug tracking-tight text-white transition-colors duration-300 group-hover:text-[#8acbff] sm:text-[22px]">
                     {item.title}
                   </h3>
 
                   {/* Organization */}
-                  <p className="relative mt-2 text-sm font-medium text-gray-500">
-                    {item.organization}
-                  </p>
+                  <p className="relative mt-1.5 text-xs font-medium text-gray-500">{item.organization}</p>
 
                   {/* Divider */}
-                  <div className="relative my-6 h-px w-full bg-linear-to-r from-white/8 via-white/4 to-transparent" />
+                  <div className="relative my-4 h-px w-full bg-linear-to-r from-white/8 via-white/4 to-transparent" />
 
-                  {/* =================================================
-                      DESCRIPTION
-                  ================================================= */}
+                  {/* DESCRIPTION*/}
+                  <p className="relative min-h-17 text-xs leading-6 text-gray-500 sm:text-[13px]">{item.description}</p>
 
-                  <p className="relative min-h-21 text-sm leading-7 text-gray-500">
-                    {item.description}
-                  </p>
-
-                  {/* =================================================
-                      TAGS
-                  ================================================= */}
-
-                  <div className="relative mt-6 flex flex-wrap gap-2">
+                  {/* TAGS*/}
+                  <div className="relative mt-4 flex flex-wrap gap-1.5">
                     {item.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="rounded-lg border border-white/6 bg-white/2.5 px-2.5 py-1.5 text-[10px] font-medium text-gray-500 transition-all duration-300 hover:border-[#168cff]/20 hover:bg-[#168cff]/5 hover:text-[#8acbff]"
+                        className="rounded-md border border-white/6 bg-[#111f32] px-2 py-1 text-[9px] font-medium text-gray-500 transition-all duration-300 hover:border-[#168cff]/20 hover:bg-[#168cff]/5 hover:text-[#8acbff]"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
 
-                  {/* =================================================
-                      BOTTOM ARROW
-                  ================================================= */}
-
-                  <div className="relative mt-7 flex items-center justify-between">
+                  {/* BOTTOM ARROW */}
+                  <div className="relative mt-5 flex items-center justify-between">
                     <div className="h-px flex-1 bg-linear-to-r from-[#168cff]/20 to-transparent" />
 
-                    <div className="ml-4 flex h-8 w-8 items-center justify-center rounded-full border border-white/6 text-gray-700 transition-all duration-300 group-hover:border-[#168cff]/25 group-hover:text-[#38bdf8]">
+                    <div className="ml-3 flex h-7 w-7 items-center justify-center rounded-full border border-white/6 text-gray-700 transition-all duration-300 group-hover:border-[#168cff]/25 group-hover:text-[#38bdf8]">
                       <ArrowUpRight
-                        size={14}
+                        size={12}
                         className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                       />
                     </div>
                   </div>
-
                 </motion.div>
               </motion.div>
             );
           })}
         </motion.div>
 
-        {/* ===================================================
-            BOTTOM STATEMENT
-        =================================================== */}
-
+        {/*BOTTOM STATEMENT*/}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -399,29 +328,23 @@ const Experience = () => {
             amount: 0.12,
           }}
           variants={cardVariants}
-          className="relative mt-8 overflow-hidden rounded-3xl border border-white/6 bg-white/[0.018] p-7 text-center backdrop-blur-xl sm:mt-10 sm:p-9"
+          className="relative mt-7 overflow-hidden rounded-2xl border border-white/6 bg-[#0a1524] p-6 text-center shadow-[0_15px_40px_rgba(0,0,0,0.25)] backdrop-blur-xl sm:mt-8 sm:p-7"
         >
-
           {/* Glow */}
-          <div className="absolute left-1/2 top-1/2 h-40 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#168cff]/6 blur-[90px]" />
+          <div className="absolute left-1/2 top-1/2 h-32 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#168cff]/6 blur-[80px]" />
 
           <div className="relative">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#168cff]">
-              The journey continues
-            </p>
-
-            <h3 className="mt-3 text-xl font-bold sm:text-2xl">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#168cff]">The journey continues</p>
+            <h3 className="mt-2 text-lg font-bold sm:text-xl">
               Learn. Build.{" "}
-              <span className="bg-linear-to-r from-[#168cff] to-[#8b5cf6] bg-clip-text text-transparent">
-                Automate.
-              </span>
+              <span className="bg-linear-to-r from-[#168cff] to-[#8b5cf6] bg-clip-text text-transparent">Automate.</span>
             </h3>
           </div>
         </motion.div>
-
       </div>
     </section>
   );
 };
 
 export default Experience;
+

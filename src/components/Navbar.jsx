@@ -142,14 +142,14 @@ const navLinks = [
     icon: Zap,
   },
   {
-    name: "Experience",
-    href: "#experience",
-    icon: BriefcaseBusiness,
-  },
-  {
     name: "Projects",
     href: "#projects",
     icon: FolderKanban,
+  },
+  {
+    name: "Experience",
+    href: "#experience",
+    icon: BriefcaseBusiness,
   },
   {
     name: "Contact",

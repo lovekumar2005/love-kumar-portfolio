@@ -184,7 +184,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden bg-[#02050b] py-24 text-white sm:py-28 lg:py-32"
+      className="relative overflow-hidden bg-[#0b1625] py-24 text-white sm:py-28 lg:py-32"
     >
       {/* BACKGROUND */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -269,9 +269,7 @@ const Projects = () => {
               className="text-[#38bdf8]"
             />
 
-            <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#8acbff] sm:text-xs">
-              My Work
-            </span>
+            <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#8acbff] sm:text-xs">My Work</span>
           </motion.div>
 
           {/* Heading */}
@@ -325,7 +323,7 @@ const Projects = () => {
                 <div className="pointer-events-none absolute -inset-px rounded-3xl bg-linear-to-b from-[#168cff]/0 via-[#168cff]/0 to-purple-500/0 opacity-0 blur-xl transition-all duration-500 group-hover:from-[#168cff]/20 group-hover:via-[#168cff]/5 group-hover:to-purple-500/15 group-hover:opacity-100" />
 
                 {/* Card */}
-                <div className="relative flex h-full flex-col overflow-hidden rounded-[22px] border border-white/[0.07] bg-[#080d15]/90 shadow-[0_20px_60px_rgba(0,0,0,0.28)] backdrop-blur-xl transition-all duration-500 group-hover:border-[#168cff]/25 group-hover:shadow-[0_25px_80px_rgba(22,140,255,0.10)]">
+                <div className="relative flex h-full flex-col overflow-hidden rounded-[22px] border border-white/[0.07] bg-[#0b1625] shadow-[0_20px_60px_rgba(0,0,0,0.28)] backdrop-blur-xl transition-all duration-500 group-hover:border-[#168cff]/25 group-hover:shadow-[0_25px_80px_rgba(22,140,255,0.10)]">
                   {/* IMAGE */}
                   <div className="relative h-53.75 overflow-hidden border-b border-white/[0.07] bg-[#050910] sm:h-56.25 lg:h-57.5">
                     {/* Image */}
@@ -455,7 +453,7 @@ const Projects = () => {
             amount: 0.15,
           }}
           variants={fadeUpVariants}
-          className="relative mt-10 overflow-hidden rounded-3xl border border-white/[0.07] bg-white/[0.018] p-7 text-center backdrop-blur-xl sm:p-9"
+          className="relative mt-10 overflow-hidden rounded-3xl border border-white/[0.07] bg-[#0a1524] p-7 text-center backdrop-blur-xl sm:p-9"
         >
           {/* Background glow */}
           <motion.div
@@ -486,9 +484,7 @@ const Projects = () => {
             </div>
 
             {/* Title */}
-            <h3 className="mt-5 text-lg font-semibold text-white sm:text-xl">
-              More projects on GitHub
-            </h3>
+            <h3 className="mt-5 text-lg font-semibold text-white sm:text-xl">More projects on GitHub</h3>
 
             {/* Description */}
             <p className="mx-auto mt-2 max-w-lg text-sm leading-6 text-gray-500">
@@ -504,9 +500,7 @@ const Projects = () => {
               className="group mt-6 inline-flex items-center gap-2 rounded-xl border border-[#168cff]/30 bg-[#168cff]/5 px-5 py-2.5 text-sm font-semibold text-gray-300 transition-all duration-300 hover:-translate-y-1 hover:border-[#168cff]/60 hover:bg-[#168cff]/9 hover:text-white hover:shadow-[0_0_30px_rgba(22,140,255,0.15)]"
             >
               <GitHubIcon size={16} />
-
               View GitHub
-
               <ArrowUpRight
                 size={15}
                 className="text-[#168cff] transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
@@ -528,14 +522,10 @@ const Projects = () => {
         >
           <Workflow size={12} />
           AI Automation
-
           <span className="text-gray-800">•</span>
-
           <Zap size={11} />
           Intelligent Workflows
-
           <span className="text-gray-800">•</span>
-
           <Sparkles size={11} />
           Modern Development
         </motion.div>
