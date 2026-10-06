@@ -103,7 +103,7 @@ const PortfolioChatbot = () => {
     // Send message to n8n
     try {
       const response = await fetch(
-        "https://abdullahrasheed.app.n8n.cloud/webhook/portfolio-chat",
+        "YOUR_N8N_WEBHOOK_URL_HERE",
         {
           method: "POST",
 
